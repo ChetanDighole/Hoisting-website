@@ -165,6 +165,17 @@ header {
 
 }
 
+@media (max-width:1024px){
+
+    .technical{
+        display: flex;
+        flex-direction: column;
+    }
+    .qualityleft>p{
+        width: 100%;
+    }
+
+}
 
 .service{
     display: flex;
