@@ -44,6 +44,13 @@ nav {
     cursor: pointer;
 }
 
+@media (max-width:1024px){
+    .midElement{
+        display: none;
+    }
+    
+}
+
 .register{
     padding: 15px 25px;
     background-color: transparent;
@@ -59,7 +66,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    height: 100%;
+}
+
+@media (max-width:1024px){
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
 }
 
 .left {
@@ -94,6 +109,14 @@ header {
     border-radius: 8px;
     cursor: pointer;
 }
+@media (max-width:1024px){
+    .left{
+        width: 100%;
+    }
+    .left>p{
+        width: 100%;
+    }
+}
 
 .host:hover ,.btn:hover{
     background: linear-gradient(360deg, rgba(8, 169, 245, 1) 44%, rgba(6, 129, 238, 1) 80%);
@@ -106,7 +129,7 @@ header {
     align-items: center;
 }
 .quality{
-    height: 80vh;
+    height: 100%;
 }
 
 .qualityRight,.technicalLeft{
@@ -130,11 +153,24 @@ header {
     color: #858585;
 }
 
+@media (max-width:1024px){
+
+    .quality{
+        display: flex;
+        flex-direction: column;
+    }
+    .qualityRight>p{
+        width: 100%;
+    }
+
+}
+
+
 .service{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    height: 100vh;
+    height: 100%;
 }
 
 .serviceTop{
@@ -190,10 +226,27 @@ header {
     grid-template-rows: repeat(2,1fr);
     place-items:center;
     row-gap: 30px;
+    padding-bottom: 30px;
+}
+
+@media (max-width:1024px){
+
+    .serviceTop{
+        display: flex;
+        flex-direction: column;
+    }
+    .serviceTop>p{
+        width: 100%;
+    }
+    .serviceBottom{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
 }
 
 .container2{
-    height: 95vh;
+    height:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,6 +328,14 @@ header {
     color: #FDFEFF;
 }
 
+@media (max-width:1024px){
+
+    .container2{
+        display: none;
+    }
+
+}
+
 .container3{
     display: flex;
     flex-direction: column;
@@ -348,14 +409,30 @@ header {
     font-weight: 600;
 }
 
+@media (max-width:1024px){
+
+    .container3>p{
+        width: 100%;
+    }
+    .container3{
+        height: 100%;
+    }
+    .container3Grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+
 .container4{
     margin-top: 100px;
-    height: 30vh;
+    height: 100%;
     background: linear-gradient(90deg, rgba(8, 169, 245, 1) 44%, rgba(6, 129, 238, 1) 80%);
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #FDFEFF;
+    padding: 5% 0;
 }
 
 
@@ -381,11 +458,12 @@ header {
 }
 
 footer{
-    height: 30vh;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     padding-top: 100px;
+    flex-wrap: wrap;
 }
 
 footer li{
